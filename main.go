@@ -12,7 +12,7 @@ func main() {
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "kai not found in this project.\n")
 		fmt.Fprintf(os.Stderr, "Install and init with:  npx kaijou\n")
-		fmt.Fprintf(os.Stderr, "(or copy the kai CLI here, then: ./kai init)\n")
+		fmt.Fprintf(os.Stderr, "Then run the UI with:     npx kaitui\n")
 		os.Exit(1)
 	}
 	if !isExecFile(kaiBin(root)) {
