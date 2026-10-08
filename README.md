@@ -7,7 +7,6 @@ Mouse-first terminal UI for **[kai](https://github.com/atagulalan/kaijou)** boar
 ```bash
 cd your-project
 npx kaitui
-# until on npm: npx github:atagulalan/kaitui
 ```
 
 What `npx kaitui` does:
@@ -15,6 +14,9 @@ What `npx kaitui` does:
 1. Ensures `./kai` exists (runs `npx kaijou` if missing → also inits `.kai/` when needed)
 2. Downloads a platform binary to `./kaitui` from GitHub Releases
 3. Launches the TUI
+
+- npm: https://www.npmjs.com/package/kaitui
+- source: https://github.com/atagulalan/kaitui
 
 ## Requires
 

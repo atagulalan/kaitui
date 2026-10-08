@@ -68,11 +68,11 @@ function ensureKai() {
   console.error('kaitui: ./kai missing — running npx kaijou…');
   const r = spawnSync(
     'npx',
-    ['--yes', 'github:atagulalan/kaijou'],
+    ['--yes', 'kaijou'],
     { cwd, stdio: 'inherit', shell: process.platform === 'win32' },
   );
   if (r.status !== 0) {
-    die('kaitui: could not install kai. Run: npx github:atagulalan/kaijou');
+    die('kaitui: could not install kai. Run: npx kaijou');
   }
 }
 
