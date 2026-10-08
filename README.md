@@ -26,8 +26,10 @@ What `npx kaitui` does:
 ## Build from source
 
 ```bash
-go build -ldflags="-s -w" -o kaitui .
-go test ./...
+mise install   # Go version from mise.toml
+make build     # → ./kaitui
+make test
+make release   # cross-compile dist/ for GitHub Releases
 ```
 
 ## Manual install
